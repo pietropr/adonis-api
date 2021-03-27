@@ -31,7 +31,8 @@
     "@adonisjs/websocket": "^1.0.12",
     "@rocketseat/adonis-acl": "^1.2.0",
     "adonis-acl": "^1.1.1",
-    "adonis-bumblebee": "^2.2.0"
+    "adonis-bumblebee": "^2.2.0",
+    "mysql": "^2.18.1"
   },
   "devDependencies": {},
   "autoload": {

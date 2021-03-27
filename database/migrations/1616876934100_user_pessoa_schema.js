@@ -5,13 +5,13 @@ const Schema = use('Schema')
 
 class UserPessoaSchema extends Schema {
   up() {
-    this.table('user', (table) => {
-      table.foreignKey('pessoa_id').references('id').inTable('pessoa').onDelete('cascade')
+    this.table('users', (table) => {
+      table.foreign('pessoas_id').references('id').inTable('pessoas').onDelete('cascade')
     })
   }
 
   down() {
-    this.table('user_pessoas', (table) => {
+    this.table('users', (table) => {
       // reverse alternations
     })
   }
