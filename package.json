@@ -30,7 +30,8 @@
     "@adonisjs/validator": "^10.0.0",
     "@adonisjs/websocket": "^1.0.12",
     "@rocketseat/adonis-acl": "^1.2.0",
-    "adonis-acl": "^1.1.1"
+    "adonis-acl": "^1.1.1",
+    "adonis-bumblebee": "^2.2.0"
   },
   "devDependencies": {},
   "autoload": {
