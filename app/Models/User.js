@@ -27,8 +27,7 @@ class User extends Model {
 
   static get traits() {
     return [
-      '@provider:Rocketseat/Acl/HasRole',
-      '@provider:Rocketseat/Acl/HasPermission'
+      '@provider:Adonis/Acl/HasRole',
     ]
   }
 

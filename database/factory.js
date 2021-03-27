@@ -23,22 +23,26 @@ const Factory = use('Factory')
 Factory.blueprint('App/Models/User', faker => {
   return {
     username: faker.username(),
-    imagem: '',
     email: faker.email({domain: 'ae.digital'}),
     password: 'password'
   }
 })
 
-Factory.blueprint('App/Models/Category', faker => {
+Factory.blueprint('App/Models/Categoria', faker => {
+  const title = faker.country({full: true})
+  return {
+    nome: title,
+  }
+})
+
+Factory.blueprint('App/Models/Pessoa', faker => {
   const title = faker.country({full: true})
   const slug = title.replaceAll(' ', '-', title)
   slug.toLowerCase()
   return {
-    nome: faker.country({full: true}),
-    slug: slug,
-    imagem: '',
-    email: faker.email({domain: 'ae.digital'}),
-    password: 'password'
+    nome: faker.name({nationality: 'en'}),
+    sexo: (Math.random() >= 0.5) ? 1 : 0,
+    cpf: faker.cpf(),
   }
 })
 
