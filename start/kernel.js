@@ -39,7 +39,11 @@ const globalMiddleware = [
 */
 const namedMiddleware = {
   auth: 'Adonis/Middleware/Auth',
-  guest: 'Adonis/Middleware/AllowGuestOnly'
+  guest: 'Adonis/Middleware/AllowGuestOnly',
+  is: 'Rocketseat/Acl/Is',
+  can: 'Rocketseat/Acl/Can',
+  acl: 'Rocketseat/Acl/Acl',
+  scope: 'Rocketseat/Acl/Scope'
 }
 
 /*
@@ -54,7 +58,8 @@ const namedMiddleware = {
 */
 const serverMiddleware = [
   'Adonis/Middleware/Static',
-  'Adonis/Middleware/Cors'
+  'Adonis/Middleware/Cors',
+  'Rocketseat/Acl/Init'
 ]
 
 Server
