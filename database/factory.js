@@ -19,3 +19,26 @@
 //     username: faker.username()
 //   }
 // })
+
+Factory.blueprint('App/Models/User', faker => {
+  return {
+    username: faker.username(),
+    imagem: '',
+    email: faker.email({domain: 'ae.digital'}),
+    password: 'password'
+  }
+})
+
+Factory.blueprint('App/Models/Category', faker => {
+  const title = faker.country({full: true})
+  const slug = title.replaceAll(' ', '-', title)
+  slug.toLowerCase()
+  return {
+    nome: faker.country({full: true}),
+    slug: slug,
+    imagem: '',
+    email: faker.email({domain: 'ae.digital'}),
+    password: 'password'
+  }
+})
+

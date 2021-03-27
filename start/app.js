@@ -23,7 +23,8 @@ const providers = [
   '@adonisjs/mail/providers/MailProvider',
   'adonis-acl/providers/AclProvider',
   '@rocketseat/adonis-acl/providers/AclProvider',
-  'adonis-bumblebee/providers/BumblebeeProvider'
+  'adonis-bumblebee/providers/BumblebeeProvider',
+  '@adonisjs/lucid-slugify/providers/SlugifyProvider'
 ]
 
 /*
