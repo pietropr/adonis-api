@@ -59,7 +59,6 @@ const namedMiddleware = {
 const serverMiddleware = [
   'Adonis/Middleware/Static',
   'Adonis/Middleware/Cors',
-  'Rocketseat/Acl/Init'
 ]
 
 Server
