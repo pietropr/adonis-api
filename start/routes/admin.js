@@ -17,4 +17,9 @@ Route.group(() => {
   */
   Route.resource('pessoas', 'PessoaController')
 
+  /*
+  User routes
+  */
+  Route.resource('users', 'UserController')
+
 }).prefix('admin').namespace('Admin')
