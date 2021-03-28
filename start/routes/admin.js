@@ -5,6 +5,16 @@ Route.group(() => {
   /*
   Categories routes
   */
-  Route.resource('categoria', 'CategoryController')
+  Route.resource('categorias', 'CategoriaController')
+
+  /*
+  Projetos routes
+  */
+  Route.resource('projetos', 'ProjetoController')
+
+  /*
+  Pessoa routes
+  */
+  Route.resource('pessoas', 'PessoaController')
 
 }).prefix('admin').namespace('Admin')

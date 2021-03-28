@@ -6,12 +6,12 @@
 /** @typedef {import('@adonisjs/framework/src/View')} View */
 
 /**
- * Resourceful controller for interacting with categorias
+ * Resourceful controller for interacting with pessoas
  */
-class CategoriaController {
+class PessoaController {
   /**
-   * Show a list of all categorias.
-   * GET categorias
+   * Show a list of all pessoas.
+   * GET pessoas
    *
    * @param {object} ctx
    * @param {Request} ctx.request
@@ -19,13 +19,11 @@ class CategoriaController {
    * @param {View} ctx.view
    */
   async index({request, response, view}) {
-
-    return 'aa'
   }
 
   /**
-   * Render a form to be used for creating a new categoria.
-   * GET categorias/create
+   * Render a form to be used for creating a new pessoa.
+   * GET pessoas/create
    *
    * @param {object} ctx
    * @param {Request} ctx.request
@@ -36,8 +34,8 @@ class CategoriaController {
   }
 
   /**
-   * Create/save a new categoria.
-   * POST categorias
+   * Create/save a new pessoa.
+   * POST pessoas
    *
    * @param {object} ctx
    * @param {Request} ctx.request
@@ -47,8 +45,8 @@ class CategoriaController {
   }
 
   /**
-   * Display a single categoria.
-   * GET categorias/:id
+   * Display a single pessoa.
+   * GET pessoas/:id
    *
    * @param {object} ctx
    * @param {Request} ctx.request
@@ -59,8 +57,8 @@ class CategoriaController {
   }
 
   /**
-   * Render a form to update an existing categoria.
-   * GET categorias/:id/edit
+   * Render a form to update an existing pessoa.
+   * GET pessoas/:id/edit
    *
    * @param {object} ctx
    * @param {Request} ctx.request
@@ -71,8 +69,8 @@ class CategoriaController {
   }
 
   /**
-   * Update categoria details.
-   * PUT or PATCH categorias/:id
+   * Update pessoa details.
+   * PUT or PATCH pessoas/:id
    *
    * @param {object} ctx
    * @param {Request} ctx.request
@@ -82,8 +80,8 @@ class CategoriaController {
   }
 
   /**
-   * Delete a categoria with id.
-   * DELETE categorias/:id
+   * Delete a pessoa with id.
+   * DELETE pessoas/:id
    *
    * @param {object} ctx
    * @param {Request} ctx.request
@@ -93,4 +91,4 @@ class CategoriaController {
   }
 }
 
-module.exports = CategoriaController
+module.exports = PessoaController

@@ -6,12 +6,12 @@
 /** @typedef {import('@adonisjs/framework/src/View')} View */
 
 /**
- * Resourceful controller for interacting with categorias
+ * Resourceful controller for interacting with projetos
  */
-class CategoriaController {
+class ProjetoController {
   /**
-   * Show a list of all categorias.
-   * GET categorias
+   * Show a list of all projetos.
+   * GET projetos
    *
    * @param {object} ctx
    * @param {Request} ctx.request
@@ -19,13 +19,11 @@ class CategoriaController {
    * @param {View} ctx.view
    */
   async index({request, response, view}) {
-
-    return 'aa'
   }
 
   /**
-   * Render a form to be used for creating a new categoria.
-   * GET categorias/create
+   * Render a form to be used for creating a new projeto.
+   * GET projetos/create
    *
    * @param {object} ctx
    * @param {Request} ctx.request
@@ -36,8 +34,8 @@ class CategoriaController {
   }
 
   /**
-   * Create/save a new categoria.
-   * POST categorias
+   * Create/save a new projeto.
+   * POST projetos
    *
    * @param {object} ctx
    * @param {Request} ctx.request
@@ -47,8 +45,8 @@ class CategoriaController {
   }
 
   /**
-   * Display a single categoria.
-   * GET categorias/:id
+   * Display a single projeto.
+   * GET projetos/:id
    *
    * @param {object} ctx
    * @param {Request} ctx.request
@@ -59,8 +57,8 @@ class CategoriaController {
   }
 
   /**
-   * Render a form to update an existing categoria.
-   * GET categorias/:id/edit
+   * Render a form to update an existing projeto.
+   * GET projetos/:id/edit
    *
    * @param {object} ctx
    * @param {Request} ctx.request
@@ -71,8 +69,8 @@ class CategoriaController {
   }
 
   /**
-   * Update categoria details.
-   * PUT or PATCH categorias/:id
+   * Update projeto details.
+   * PUT or PATCH projetos/:id
    *
    * @param {object} ctx
    * @param {Request} ctx.request
@@ -82,8 +80,8 @@ class CategoriaController {
   }
 
   /**
-   * Delete a categoria with id.
-   * DELETE categorias/:id
+   * Delete a projeto with id.
+   * DELETE projetos/:id
    *
    * @param {object} ctx
    * @param {Request} ctx.request
@@ -93,4 +91,4 @@ class CategoriaController {
   }
 }
 
-module.exports = CategoriaController
+module.exports = ProjetoController
